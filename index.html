@@ -7,13 +7,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         integrity="sha512-ZYg+hQvLlM0W9C3P6vTpes5LmJ66G2EsroxDNzwD6qiulckldb29eD9I672HL2X+LH5nRhY1sQqZLJGB+aUUPg==" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <div>
-                <img src="images/webdevlogo.png" alt="">
+            <div class="logo">
+                <img src="" alt="">
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation"><span class="hamburger"></span>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
             </button>
             <nav class="nav">
                 <ul class="nav__list">
@@ -28,36 +35,36 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Karina</strong>
+            Hi, I am <strong>Karina Caro</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Front End Dev</p>
-            <img src="" alt="">
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="images/webdevgraphic.jpg" alt="" class="intro__img">
         </section>
 
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title">My Work</h2>
-            <p class="section__subtitle"></p>
+            <h2 class="section__title section__title--work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
                 <a href="#" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
+                    <img src="images/project1.png" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 02 -->
                 <a href="#" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
+                    <img src="images/project2.jpg" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 03 -->
                 <a href="#" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
+                    <img src="images/project3.png" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 04 -->
                 <a href="#" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
+                    <img src="images/project4.jpeg" alt="" class="portfolio__img">
                 </a>
             </div>
 
@@ -67,23 +74,39 @@
         <!-- About Me  -->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I Am</h2>
-            <p class="section__subtitle section__subtitle--about"></p>
+            <p class="section__subtitle section__subtitle--about">This is placeholder text</p>
 
             <div class="about-me__body">
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Officia voluptates cumque possimus, reiciendis, ratione 
+                    provident velit suscipit placeat, asperiores inventore pariatur 
+                    aliquid praesentium consequatur. Autem fugiat earum recusandae 
+                    nulla eaque!</p>
                 <p></p>
             </div>
-            <img src="images/profile.jpg" alt="Profile photo of Karina smiling">
+            <img src="images/profile.jpg" alt="Profile photo of Karina smiling" class="about-me__img">
         </section>
 
         <!-- Footer -->
-        <footer>
+        <footer class="footer">
             <!-- replace with your own email address -->
             <a href="mailto:carokarina@icloud.com" class="footer__link">carokarina@icloud.com</a>
             <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://github.com/alltookarina">A</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">B</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://instagram.com/alltookarina">C</a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/alltookarina">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://alltookarina.com">
+                        <i class="fab fa-wordpress"></i>
+                    </a>
+                </li>
             </ul>
         </footer>
     </body>
