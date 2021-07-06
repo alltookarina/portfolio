@@ -6,28 +6,28 @@
 
 /* Custom properties, update these for your own design */
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Lora', serif;
+    --ff-secondary: 'Roboto Slab', serif;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-bold: 700;
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #66d2de;
 
     --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h2: 2.50rem;
+    --fs-h3: 1.50rem;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     :root {
-        --fs-h1: 4.5rem;
+        --fs-h1: 5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -86,7 +86,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle {
-    margin: 0;
+    margin-bottom: 1;
     font-size: var(--fs-h3);
 }
 
@@ -305,15 +305,21 @@ header {
 
 /* My Work */
 
+@media (min-width: 600px) {
+    .portfolio {
+        display: grid;
+        margin: 0 auto;
+        grid-template-areas:
+            "porfolio img";
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+}
+
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
-}
-
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .portfolio__item {
@@ -398,5 +404,3 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-
